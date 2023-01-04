@@ -1,0 +1,13 @@
+Solution :
+
+- The solution consists the tradeoff between space and time complexitity.
+- Firstly we need to initialize a vector that will be storing the farthest distance of a particular service for every block
+   the vector to initialize is minDist.
+- Secondly we need to see that for every block , there is a need to go through every requirement and find the closest block
+  that satisfies for that requirement change vector value for that block with the minimum of the existing value maximum distance for any requirement.
+- Lastly return the index of the minimum value of the vector
+
+- By using maps we check the first maximum and minimum distance
+- In the function apartmentHunting, we are taking two variables maxdist and mindist to calculate the minimum and maximum distance.
+- After calculating the distances it checks the perfect nearby block and returns the value.
+- We are using loops to iterate the blocks, as the values are stored in maps so it iterates the map and fetches the valus.
